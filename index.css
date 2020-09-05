@@ -1,0 +1,115 @@
+body
+{
+  height:100vh;
+  width: 100vw;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #fd746c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #fd746c);
+  font-family: 'Roboto', sans-serif;
+}
+.game-cont
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height:70%;
+  width:20%;
+  margin:0% 0% 0% 40%;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #434343);
+  box-shadow: 5px 6px 12px black,-5px -6px 5px black ;
+}
+.game
+{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+}
+.up
+{
+  height:40%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  margin:0%;
+  border-bottom:white solid;
+}
+.target
+{
+  height:50%;
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color:green;
+  font-size:300%;
+  background-color: tomato;
+  border-radius:10px;
+  position: relative;
+  left: 10%;
+  top:20%;
+}
+.cur_sum
+{
+  height:40%;
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  justify-content: center;
+  color:yellow;
+  font-size:200%;
+  border-radius: 10px;
+  background-color: tomato;
+  position: relative;
+  left: 40%;
+  top:25%;
+}
+.board
+{
+  display: flex;
+  flex-direction: column;
+  height:60%;
+}
+.row
+{
+  display: flex;
+  flex-direction: row;
+  height:16%;
+  margin:2px;
+}
+.cell
+{
+  background-color:grey;
+  height:100%;
+  width:20%;
+  margin:2px;
+  border-radius:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+}
+@media only screen and (max-width: 600px)
+{
+  .game-cont
+  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height:70%;
+  width:70%;
+  margin:0% 0% 0% 15%;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #434343);
+  box-shadow: 5px 6px 12px black,-5px -6px 5px black ;
+  }
+}
